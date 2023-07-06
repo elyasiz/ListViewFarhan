@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="36dp" >
+
+        <Button
+            android:id="@+id/parseXmlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParseXML" />
+
+        <Button
+            android:id="@+id/ParseJsonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParseJSON" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="20dp" >
+
+        <ListView
+            android:id="@+id/dataListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>
